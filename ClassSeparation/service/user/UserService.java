@@ -1,4 +1,9 @@
 // 問3.以下のクラスを適切に分割してください。
+//回答は同じ階層にUserAuthenticationService.javaとUserManagementService.javaの2つのクラスのファイルを作成し分離させました。
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserService {
 
   private final UserMapper userMapper;
@@ -63,4 +68,3 @@ public class UserService {
     return userMapper.findByEmail(email) != null;
   }
 }
-
