@@ -43,7 +43,8 @@ public class AssignmentTask {
 
   /*
    * パターン6
-   * newだけでは何を作成するのかわからないため、createNewUserに変更。
+   * newだけでは何を作成するのかわからないため、
+   * また、newだけでは予約語なので使用不可のため、createNewUserに変更。
    */
   public User createNewUser(String name) {
     return new User(name);
